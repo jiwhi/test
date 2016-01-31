@@ -6,7 +6,7 @@
 
 #define item 32000
 
-int com1(const void *a, const void *b){
+int com(const void *a, const void *b){
 	int *x = (int *)a;
 	int *y = (int *)b;
 	if (*x < *y) return -1;
@@ -24,7 +24,7 @@ void main(){
 		s[i] = rand() % 100 + 1;
 
 	t1 = GetTickCount();
-	qsort(s, item, sizeof(int), com1);
+	qsort(s, item, sizeof(int), com);
 	t2 = GetTickCount();
 
 	printf("걸리는 시간 : %.3f 초 입니다.", (t2 - t1) / (double)CLK_TCK);
