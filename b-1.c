@@ -1,3 +1,4 @@
+//³­±¤Çå
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
@@ -5,7 +6,7 @@
 #include <time.h>
 
 #define item 32000
-
+//kwang
 int com(const void *a, const void *b){
 	int *x = (int *)a;
 	int *y = (int *)b;
